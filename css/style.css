@@ -1,0 +1,124 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(
+      circle at 50% -3.03%,
+      #ffffff 0,
+      #fffbf1 25%,
+      #ece1d0 50%,
+      #d9c8b0 75%,
+      #cab297 100%
+  );
+}
+
+.logo {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo img {
+  border: solid 5px #cab29796;
+  border-radius: 50%;
+  margin-top: 30px;
+  width: 125px;
+  height: 125px;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.subtitulo span {
+  font-size: bold;
+  font-weight: 800;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.botoes a {
+  background-color: white;
+  color: #cab297;
+  border: 3px solid #cab297;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 450px;
+  padding: 10px;
+}
+
+.botoes a:hover {
+  color: white;
+  border: 3px solid white;
+  background-color: #cab29777;
+  width: 460px;
+  transition: 0.3s;
+}
+
+.icones {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 63.5px;
+  height: 100%;
+}
+
+.icones a {
+  margin: 10px 25px 10px 25px;
+  flex-direction: row-reverse;
+}
+
+.icones img {
+  max-width: 200px;
+}
+
+.icones img:hover {
+  transform: rotate(360deg);
+  transition: 2s;
+}
+
+@media (max-width: 500px) {
+  .botoes {
+      grid-template-columns: 1fr;
+  }
+  .icones {
+      position: relative;
+  }
+  .insta {
+      position: absolute;
+      left: 90px;
+  }
+  .face {
+      position: absolute;
+      align-items: center;
+      left: 150px;
+  }
+  .botoes a {
+      width: 300px;
+      padding: 15px 15px 15px 15px;
+      font-size: 1.2rem;
+  }
+  .botoes a:first-child {
+      margin-top: 20px;
+  }
+  .botoes a:hover {
+      width: 310px;
+  }
+  .logo img {
+      margin-top: 35px;
+      height: 110px;
+  }
+}
+/*Desenvolvido por Dev Company./*
