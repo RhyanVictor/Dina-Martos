@@ -1,124 +1,150 @@
+/* Definição da fonte padrão para todo o documento */
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
+/* Configuração para garantir que o HTML e o corpo do documento ocupem toda a largura e altura da janela de visualização */
+html, body {
+  max-width: 1500px;
+  width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  /* Impede a rolagem horizontal */
+  overflow-x: hidden;
 }
 
+/* Definição do plano de fundo do corpo com um gradiente radial */
 body {
-  background-image: radial-gradient(
-      circle at 50% -3.03%,
-      #ffffff 0,
-      #fffbf1 25%,
-      #ece1d0 50%,
-      #d9c8b0 75%,
-      #cab297 100%
-  );
+  background: radial-gradient(#ffffff);
 }
 
+/* Estilo para o logotipo, centralizando-o vertical e horizontalmente */
 .logo {
-  display: grid;
+  display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  height: 320px;
 }
 
-.logo img {
-  border: solid 5px #cab29796;
+/* Estilo para a imagem do logotipo, aplicando borda arredondada e uma borda sólida */
+.logo img{
   border-radius: 50%;
-  margin-top: 30px;
-  width: 125px;
-  height: 125px;
+  border: 4px solid #cab297;
+  /* Garante que a imagem não ultrapasse o contêiner */
+  max-width: 100%;
 }
 
+/* Estilo para o subtítulo, centralizando o texto e aplicando sombra */
 .subtitulo {
   text-align: center;
-  margin-bottom: 35px;
+  margin: -20px 0 35px;
+  color: #363636;
+  box-shadow: 0 -40px 30px 30px rgba(255, 255, 255, 0.966);
 }
 
+/* Estilo para a parte em destaque do subtítulo, definindo negrito */
 .subtitulo span {
-  font-size: bold;
   font-weight: 800;
 }
 
+/* Estilo para os botões, organizados em uma grade, com bordas arredondadas e transições suaves */
 .botoes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-content: center;
   text-align: center;
 }
 
 .botoes a {
   background-color: white;
   color: #cab297;
-  border: 3px solid #cab297;
+  border: 2px solid #cab297;
   border-radius: 50px;
   text-decoration: none;
   font-size: 1.2rem;
   width: 450px;
   padding: 10px;
-}
-
-.botoes a:hover {
-  color: white;
-  border: 3px solid white;
-  background-color: #cab29777;
-  width: 460px;
   transition: 0.3s;
 }
 
-.icones {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 63.5px;
-  height: 100%;
+/* Estilo para os botões ao passar o mouse, alterando as cores e a largura */
+.botoes a:hover {
+  color: white;
+  border-color: white;
+  background-color: #cab29777;
+  width: 460px;
 }
 
-.icones a {
-  margin: 10px 25px 10px 25px;
-  flex-direction: row-reverse;
+/* Estilo para os ícones, centralizando-os e aplicando uma transição de rotação */
+.icones {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .icones img {
-  max-width: 200px;
+  width: 40px;
+  margin: 0 50px;
+  transition: transform 2s;
 }
 
+/* Estilo para a rotação dos ícones ao passar o mouse */
 .icones img:hover {
   transform: rotate(360deg);
-  transition: 2s;
 }
 
-@media (max-width: 500px) {
+/* Estilos para telas com largura máxima de 800px */
+@media (max-width: 800px) {
+  /* Ajustes nos botões e no logotipo para telas menores */
   .botoes {
-      grid-template-columns: 1fr;
-  }
-  .icones {
-      position: relative;
-  }
-  .insta {
-      position: absolute;
-      left: 90px;
-  }
-  .face {
-      position: absolute;
-      align-items: center;
-      left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .botoes a {
-      width: 300px;
-      padding: 15px 15px 15px 15px;
-      font-size: 1.2rem;
-  }
-  .botoes a:first-child {
-      margin-top: 20px;
+    width: 300px;
+    font-size: 1rem;
+    margin: 10px 0;
   }
   .botoes a:hover {
-      width: 310px;
+    width: 310px;
   }
-  .logo img {
-      margin-top: 35px;
-      height: 110px;
+  .logo {
+    margin-top: 20px;
+    height: 300px;
+    background-size: 100%;
+    background-position: center;
   }
 }
-/*Desenvolvido por Dev Company./*
+
+/* Estilos para telas com largura máxima de 500px */
+@media (max-width: 500px) {
+  /* Ajustes nos botões e nos ícones para telas ainda menores */
+  .insta {
+    right: 10px;
+  }
+  .face {
+    right: 50px;
+  }
+  .botoes {
+    align-items: center;
+  }
+  .botoes a {
+    width: 200px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  .botoes a:hover {
+    width: 210px;
+  }
+  .botoes a:first-child {
+    margin-top: 10px;
+  }
+  .icones img {
+    margin: 0 20px;
+  }
+}
+/*Desenvolvido por Dev Company*/
