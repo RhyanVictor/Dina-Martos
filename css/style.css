@@ -6,7 +6,6 @@
 /* Configuração para garantir que o HTML e o corpo do documento ocupem toda a largura e altura da janela de visualização */
 html,
 body {
-    max-width: 1500px; /* Define a largura máxima do documento */
     width: 100%; /* Define a largura total do documento */
     height: 100%; /* Define a altura total do documento */
     margin: 0; /* Remove as margens */
@@ -41,7 +40,9 @@ body {
 /* Estilo para o subtítulo, centralizando o texto e aplicando sombra */
 .subtitulo {
     text-align: center; /* Centraliza o texto */
-    margin: -10px 0 20px; /* Define as margens */
+    margin: -5px 0 20px; /* Define as margens */
+    margin-top: -40px;
+    margin-bottom: 30px;
     color: #363636; /* Define a cor do texto */
     box-shadow: 0 -40px 30px 30px rgba(255, 255, 255, 0.966); /* Adiciona uma sombra */
 }
@@ -59,8 +60,8 @@ body {
 .botoes {
     display: grid; /* Organiza os botões em uma grade */
     grid-template-columns: repeat(3, 1fr); /* Define três colunas iguais */
+    justify-items: center;
     gap: 10px; /* Define o espaço entre os botões */
-    justify-content: center; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto */
 }
 
