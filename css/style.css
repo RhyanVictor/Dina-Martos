@@ -154,7 +154,7 @@ body {
   /* Estilo para o logotipo */
   .logo {
     height: 500px; /* Define a altura do logotipo */
-    background-image: url(/img/DinaM.png); /* Define a imagem de fundo do logotipo */
+background-image: url(../img/DinaM.png); /* Define a imagem de fundo do logotipo */
     background-size: cover; /* Ajusta o tamanho do background */
     background-position: center bottom; /* Define a posição do background */
     background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
