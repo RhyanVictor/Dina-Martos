@@ -1,177 +1,180 @@
 /* Definição da fonte padrão para todo o documento */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Configuração para garantir que o HTML e o corpo do documento ocupem toda a largura e altura da janela de visualização */
-html, body {
-  max-width: 1500px; /* Define a largura máxima do documento */
-  width: 100%; /* Define a largura total do documento */
-  height: 100%; /* Define a altura total do documento */
-  margin: 0; /* Remove as margens */
-  padding: 0; /* Remove os preenchimentos */
-  /* Impede a rolagem horizontal */
-  overflow-x: hidden;
+html,
+body {
+    max-width: 1500px; /* Define a largura máxima do documento */
+    width: 100%; /* Define a largura total do documento */
+    height: 100%; /* Define a altura total do documento */
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove os preenchimentos */
+    /* Impede a rolagem horizontal */
+    overflow-x: hidden;
 }
 
 /* Definição do plano de fundo do corpo com um gradiente radial */
 body {
-  background: radial-gradient(#ffffff); /* Cria um gradiente radial como plano de fundo */
+    background: radial-gradient(
+        #ffffff
+    ); /* Cria um gradiente radial como plano de fundo */
 }
 
 /* Estilo para o logotipo, centralizando-o vertical e horizontalmente */
 .logo {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 320px; /* Define a altura do logotipo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 320px; /* Define a altura do logotipo */
 }
 
 /* Estilo para a imagem do logotipo, aplicando borda arredondada e uma borda sólida */
-.logo img{
-  border-radius: 50%; /* Define a borda arredondada */
-  border: 4px solid #cab297; /* Define uma borda sólida */
-  /* Garante que a imagem não ultrapasse o contêiner */
-  max-width: 100%; /* Define a largura máxima da imagem */
+.logo img {
+    border-radius: 50%; /* Define a borda arredondada */
+    border: 4px solid #cab297; /* Define uma borda sólida */
+    /* Garante que a imagem não ultrapasse o contêiner */
+    max-width: 100%; /* Define a largura máxima da imagem */
 }
 
 /* Estilo para o subtítulo, centralizando o texto e aplicando sombra */
 .subtitulo {
-  text-align: center; /* Centraliza o texto */
-  margin: -10px 0 20px; /* Define as margens */
-  color: #363636; /* Define a cor do texto */
-  box-shadow: 0 -40px 30px 30px rgba(255, 255, 255, 0.966); /* Adiciona uma sombra */
+    text-align: center; /* Centraliza o texto */
+    margin: -10px 0 20px; /* Define as margens */
+    color: #363636; /* Define a cor do texto */
+    box-shadow: 0 -40px 30px 30px rgba(255, 255, 255, 0.966); /* Adiciona uma sombra */
 }
 
 /* Estilo para a parte em destaque do subtítulo, definindo negrito */
 .subtitulo span {
-  font-weight: 800; /* Define o peso da fonte como negrito */
+    font-weight: 800; /* Define o peso da fonte como negrito */
 }
 
-.subtitulo{
-  font-weight: 400, bold;
+.subtitulo {
+    font-weight: 400, bold;
 }
 
 /* Estilo para os botões, organizados em uma grade, com bordas arredondadas e transições suaves */
 .botoes {
-  display: grid; /* Organiza os botões em uma grade */
-  grid-template-columns: repeat(3, 1fr); /* Define três colunas iguais */
-  gap: 10px; /* Define o espaço entre os botões */
-  justify-content: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
+    display: grid; /* Organiza os botões em uma grade */
+    grid-template-columns: repeat(3, 1fr); /* Define três colunas iguais */
+    gap: 10px; /* Define o espaço entre os botões */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
 }
 
 .botoes a {
-  background-color: white; /* Define a cor de fundo dos botões */
-  color: #cab297; /* Define a cor do texto dos botões */
-  border: 2px solid #cab297; /* Define uma borda sólida */
-  border-radius: 50px; /* Define bordas arredondadas */
-  text-decoration: none; /* Remove a decoração de texto */
-  font-size: 1.1rem; /* Define o tamanho da fonte */
-  width: 450px; /* Define a largura dos botões */
-  padding: 10px; /* Adiciona preenchimento interno */
-  transition: 0.3s; /* Adiciona uma transição suave */
+    background-color: white; /* Define a cor de fundo dos botões */
+    color: #cab297; /* Define a cor do texto dos botões */
+    border: 2px solid #cab297; /* Define uma borda sólida */
+    border-radius: 50px; /* Define bordas arredondadas */
+    text-decoration: none; /* Remove a decoração de texto */
+    font-size: 1.1rem; /* Define o tamanho da fonte */
+    width: 450px; /* Define a largura dos botões */
+    padding: 10px; /* Adiciona preenchimento interno */
+    transition: 0.3s; /* Adiciona uma transição suave */
 }
 
 /* Estilo para os botões ao passar o mouse, alterando as cores e a largura */
 .botoes a:hover {
-  color: white; /* Define a cor do texto no hover */
-  border-color: white; /* Define a cor da borda no hover */
-  background-color: #cab29777; /* Define a cor de fundo no hover */
-  width: 460px; /* Ajusta a largura no hover */
+    color: white; /* Define a cor do texto no hover */
+    border-color: white; /* Define a cor da borda no hover */
+    background-color: #cab29777; /* Define a cor de fundo no hover */
+    width: 460px; /* Ajusta a largura no hover */
 }
 
 /* Estilo para os ícones, centralizando-os e aplicando uma transição de rotação */
 .icones {
-  display: flex; /* Organiza os ícones em uma linha */
-  justify-content: center; /* Centraliza horizontalmente */
-  padding: 20px; /* Adiciona preenchimento */
+    display: flex; /* Organiza os ícones em uma linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona preenchimento */
 }
 
 .icones img {
-  width: 40px; /* Define a largura das imagens dos ícones */
-  margin: 0 50px; /* Define a margem entre os ícones */
-  transition: transform 2s; /* Adiciona uma transição de rotação */
+    width: 40px; /* Define a largura das imagens dos ícones */
+    margin: 0 50px; /* Define a margem entre os ícones */
+    transition: transform 2s; /* Adiciona uma transição de rotação */
 }
 
 /* Estilo para a rotação dos ícones ao passar o mouse */
 .icones img:hover {
-  transform: rotate(360deg); /* Rotaciona os ícones no hover */
+    transform: rotate(360deg); /* Rotaciona os ícones no hover */
 }
 
 /* Regras de mídia para telas com largura máxima de 800px */
 @media (max-width: 800px) {
-  /* Ajustes nos botões e no logotipo para telas menores */
-  .botoes {
-    display: flex; /* Organiza os botões em uma coluna */
-    flex-direction: column; /* Define a direção como coluna */
-    align-items: center; /* Centraliza os itens verticalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 5px; /* Define o espaço entre os botões */
-  }
-  .botoes a {
-    width: 300px; /* Define a largura dos botões */
-    font-size: 1rem; /* Define o tamanho da fonte dos botões */
-    margin: 5px 0; /* Adiciona margem entre os botões */
-  }
-  .botoes a:hover {
-    width: 310px; /* Ajusta a largura dos botões no hover */
-  }
-  .logo {
-    height: 300px; /* Define a altura do logotipo */
-    background-size: 100%; /* Ajusta o tamanho do background */
-    background-position: center; /* Centraliza o background */
-  }
+    /* Ajustes nos botões e no logotipo para telas menores */
+    .botoes {
+        display: flex; /* Organiza os botões em uma coluna */
+        flex-direction: column; /* Define a direção como coluna */
+        align-items: center; /* Centraliza os itens verticalmente */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        gap: 5px; /* Define o espaço entre os botões */
+    }
+    .botoes a {
+        width: 300px; /* Define a largura dos botões */
+        font-size: 1rem; /* Define o tamanho da fonte dos botões */
+        margin: 5px 0; /* Adiciona margem entre os botões */
+    }
+    .botoes a:hover {
+        width: 310px; /* Ajusta a largura dos botões no hover */
+    }
+    .logo {
+        height: 300px; /* Define a altura do logotipo */
+        background-size: 100%; /* Ajusta o tamanho do background */
+        background-position: center; /* Centraliza o background */
+    }
 }
 /* Regras de mídia para telas com largura máxima de 500px */
 @media (max-width: 500px) {
-  /* Centraliza os ícones */
-  .icones {
-    display: flex; /* Organiza os ícones em uma linha */
-    justify-content: center; /* Centraliza horizontalmente */
-    position: relative; /* Define a posição relativa */
-    top: -13px; /* Desloca os ícones para cima */
-  }
-  /* Estilo para as imagens dos ícones */
-  .icones img {
-    width: 40px; /* Define a largura das imagens dos ícones */
-  }
-  /* Ajustes para os botões */
-  .botoes a {
-    width: 300px; /* Define a largura dos botões */
-    padding: 15px; /* Adiciona preenchimento interno aos botões */
-    font-size: 1rem; /* Define o tamanho da fonte dos botões */
-    margin-top: 10px; /* Adiciona margem superior aos botões */
-    text-align: center; /* Centraliza o texto dos botões */
-    display: block; /* Transforma os botões em elementos de bloco */
-  }
-  /* Efeito de hover nos botões */
-  .botoes a:hover {
-    border: 3px solid white; /* Define a borda no hover */
-    background-color: #cab29777; /* Define a cor de fundo no hover */
-    transition: 0.3s; /* Adiciona uma transição suave */
-  }
-  /* Estilo para o logotipo */
-  .logo {
-    height: 500px; /* Define a altura do logotipo */
-background-image: url(../img/DinaM.png); /* Define a imagem de fundo do logotipo */
-    background-size: cover; /* Ajusta o tamanho do background */
-    background-position: center bottom; /* Define a posição do background */
-    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
-  }
-  /* Oculta a imagem do logotipo */
-  .logo img {
-    display: none; /* Esconde a imagem do logotipo */
-  }
-  /* Ajustes para o subtítulo */
-  .subtitulo {
-    margin-top: -20px; /* Ajusta a margem superior do subtítulo */
-    box-shadow: 0px -40px 30px 30px rgba(255, 255, 255, 0.966); /* Adiciona uma sombra suave */
-  }
-  /* Ajustes para a cor e borda dos botões */
-  .botoes a{
-    border-color: #cab297a2; /* Define a cor da borda dos botões */
-    color: #cab297; /* Define a cor do texto dos botões */
-  }
+    /* Centraliza os ícones */
+    .icones {
+        display: flex; /* Organiza os ícones em uma linha */
+        justify-content: center; /* Centraliza horizontalmente */
+        position: relative; /* Define a posição relativa */
+        top: -13px; /* Desloca os ícones para cima */
+    }
+    /* Estilo para as imagens dos ícones */
+    .icones img {
+        width: 40px; /* Define a largura das imagens dos ícones */
+    }
+    /* Ajustes para os botões */
+    .botoes a {
+        width: 300px; /* Define a largura dos botões */
+        padding: 15px; /* Adiciona preenchimento interno aos botões */
+        font-size: 1rem; /* Define o tamanho da fonte dos botões */
+        margin-top: 10px; /* Adiciona margem superior aos botões */
+        text-align: center; /* Centraliza o texto dos botões */
+        display: block; /* Transforma os botões em elementos de bloco */
+    }
+    /* Efeito de hover nos botões */
+    .botoes a:hover {
+        border: 3px solid white; /* Define a borda no hover */
+        background-color: #cab29777; /* Define a cor de fundo no hover */
+        transition: 0.3s; /* Adiciona uma transição suave */
+    }
+    /* Estilo para o logotipo */
+    .logo {
+        height: 500px; /* Define a altura do logotipo */
+        background-image: url(../img/DinaM.png); /* Define a imagem de fundo do logotipo */
+        background-size: cover; /* Ajusta o tamanho do background */
+        background-position: center bottom; /* Define a posição do background */
+        background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    }
+    /* Oculta a imagem do logotipo */
+    .logo img {
+        display: none; /* Esconde a imagem do logotipo */
+    }
+    /* Ajustes para o subtítulo */
+    .subtitulo {
+        margin-top: -20px; /* Ajusta a margem superior do subtítulo */
+        box-shadow: 0px -40px 30px 30px rgba(255, 255, 255, 0.966); /* Adiciona uma sombra suave */
+    }
+    /* Ajustes para a cor e borda dos botões */
+    .botoes a {
+        border-color: #cab297a2; /* Define a cor da borda dos botões */
+        color: #cab297; /* Define a cor do texto dos botões */
+    }
 }
 /* Desenvolvido por Dev Company */
